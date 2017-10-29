@@ -1,0 +1,8 @@
+filename = 'sample.txt'
+with open(filename,'a') as file_object:
+    """lines = file_object.readlines()"""
+    file_object.write("append mode writing on file.")
+
+"""for line in lines:
+    print(line)"""
+

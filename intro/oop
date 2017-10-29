@@ -1,0 +1,26 @@
+class Dog():
+
+    def __init__(self, name):
+        self.name = name
+
+    def sit(self):
+        print(self.name + " is sitting.")
+
+my_dog = Dog('paso')
+
+print(my_dog.name + " is a good dog")
+my_dog.sit()
+
+print("Dog Ended here")
+
+class InherDog(Dog):
+
+    def __init__(self,name):
+        super().__init__(name)
+
+    def search(self):
+        print(self.name + " is searching")
+
+my_dog1 = InherDog('willie')
+my_dog1.search()
+my_dog1.sit()
